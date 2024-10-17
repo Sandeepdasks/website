@@ -321,6 +321,7 @@
         e.preventDefault()
         $.ajax({
             url:"https://script.google.com/macros/s/AKfycbyG2ug5k8zLDCUeCm7xVPCZXMaA_TVQQxizphGaT6JWBAPXQPKJc2A/exec",
+            header: header("Access-Control-Allow-Origin: *"),
             data:$("#gform").serialize(),
             method:"post",
             success:function (response){
